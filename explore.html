@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+  </head>
+  <body>
+    <script>
+      const masuk = confirm("apakah anda ingin masuk?");
+
+      if (masuk) {
+        const nama = prompt("Nama Anda?");
+        alert(`Hallo ${nama}`);
+
+        const nilaiUjian = prompt("Input nilai Ujian");
+        const nilaiAbsensi = prompt("input nilai Absensi");
+
+        if (nilaiUjian > 80 && nilaiAbsensi > 70) {
+          alert(`${nama} Selamat anda lulus`);
+        } else if (nilaiUjian > 60 || nilaiAbsensi > 50) {
+          alert(`Maaf ${nama} Silahkan anda mengikuti ujian kembali`);
+        } else {
+          alert(`Maaf ${nama} Anda tidak lulus`);
+        }
+      }
+    </script>
+  </body>
+</html>

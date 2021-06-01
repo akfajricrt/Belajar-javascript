@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Expresion</title>
+  </head>
+  <body>
+    <script>
+      const examValue = 75;
+
+      if (examValue > 80) {
+        document.writeln("Kerja Bagus, nilai anda : A");
+      } else if (examValue > 70) {
+        document.writeln("Kerja Bagus, nilai anda : B");
+      } else if (examValue > 60) {
+        document.writeln("Kerja Bagus, nilai anda : C");
+      } else {
+        document.writeln("Mungkin anda perlu belajar kembali");
+      }
+
+      const nilaiUjian = 60;
+      const nilaiAbsensi = 80;
+
+      document.writeln("<br>");
+      document.writeln("<br>");
+
+      if (nilaiUjian > 80 && nilaiAbsensi > 70) {
+        document.writeln("Selamat Anda Lulus");
+      } else if (nilaiUjian > 60 || nilaiAbsensi > 50) {
+        document.writeln("Silahkan anda mengikuti ujian kembali");
+      } else {
+        document.writeln("Maaf Anda tidak lulus");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Tamplate</title>
+  </head>
+  <body>
+    <script>
+      //string tamplate untuk meringkas tanpa menggunakan  tanda +
+      //yang membuat lebih ringkes
+      const name = "ahmad Khoirul fajri";
+
+      const firstName = "ahmad";
+      const midlleName = "khoirul";
+      const lastName = "fajri";
+      const tamplate = `Name : ${firstName} ${midlleName} ${lastName}`;
+
+      console.info(tamplate);
+
+      const nilai = 80;
+      const tamplate2 = `Name : ${name} Lulus : ${nilai > 75}`;
+
+      console.info(tamplate2);
+
+      //selain bisa untuk string tamplate backtick juga bisa
+      //untuk multilinestring membuat baris baru tanpa kesusahan
+
+      let multiline = `Nama Saya adalah fajri
+saya seorang web developer,
+biasanya saya membuat project dengan laravel,
+namun sekarang belajar dengan javascript`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

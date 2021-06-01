@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi number and string</title>
+  </head>
+  <body>
+    <script>
+      const value1 = parseInt("2");
+      const value2 = 2;
+
+      const sum = value1 + value2;
+
+      document.writeln(`<pre>${sum}</pre>`);
+
+      //parseInt() merubah string ke number atau bilangan bulat
+      //parseFloat() meribah string ke bilangan pecahan
+      //NUmber() merubah string ke bilangan bulat dan string
+      document.writeln(`<pre>${parseFloat("1")}</pre>`);
+      document.writeln(`<pre>${parseInt("1.1")}</pre>`);
+      document.writeln(`<pre>${Number("1.1")}</pre>`);
+
+      //menggunakan toString() untuk merubah number ke sting
+      const a = 1;
+      const b = 1;
+
+      const totalNumber = a.toString() + b.toString();
+
+      document.writeln(`<pre>${totalNumber}</pre>`);
+
+      document.writeln(`<pre>${parseFloat("1basaaa")}</pre>`);
+      document.writeln(`<pre>${parseInt("1.1salah")}</pre>`);
+      document.writeln(`<pre>${Number("1.1")}</pre>`);
+
+      //mebuat NaN
+
+      const first = parseInt("salah");
+      const total = first + 100;
+
+      document.writeln(`<pre>${total}</pre>`);
+      document.writeln(`<pre>${parseFloat("a1basaaa")}</pre>`);
+      document.writeln(`<pre>${parseInt("a1.1salah")}</pre>`);
+      document.writeln(`<pre>${Number("1.1")}</pre>`);
+
+      //isNaN() digunakan untuk melakukan pengecekan NaN atau Bukan
+      // dan isNaN berguna untuk pengecekan apakah itu NaN atau Bukan
+      document.writeln(`<pre>${isNaN(first)}</pre>`);
+      document.writeln(`<pre>${isNaN(100)}</pre>`);
+    </script>
+  </body>
+</html>
