@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falsy dan Truthy</title>
+  </head>
+  <body>
+    <script>
+      /* yang di anggap falsy
+    1. false (bolean false)
+    2. 0 -0 (Number 0 dan -0 dianggap false)
+    3. "",'',`` (type data string kosong di anggap false)
+    4. Null (null di anggap false)
+    5. Undefined (undefined dianggap false)
+    6.NaN (Not a Number di anggap false)
+
+    */
+
+      //truthy adalah kebalikannya dari falsy
+
+      let data = "";
+
+      if (data) {
+        document.writeln("True");
+      } else {
+        document.writeln("False");
+      }
+    </script>
+  </body>
+</html>

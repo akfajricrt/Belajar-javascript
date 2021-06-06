@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statement</title>
+  </head>
+  <body>
+    <script>
+      // switch di gunakan ketika perbandingan == , jadi selain itu tetap menggunakan pengecekan if statement
+      const nilai = "E";
+
+      switch (nilai) {
+        case "A":
+          document.writeln("Wow anda lulus dengan baik");
+          break;
+        case "B":
+        case "C":
+          document.writeln("anda lulus");
+          break;
+        case "D":
+          document.writeln("anda tidak lulus");
+          break;
+        default:
+          document.writeln("mungkin anda harus belajar lagi");
+          break;
+      }
+    </script>
+  </body>
+</html>

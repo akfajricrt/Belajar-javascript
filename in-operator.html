@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Operator</title>
+  </head>
+  <body>
+    <script>
+      //in operator digunakan adalah untuk mengecek property atau index pada array dan object
+      const names = {
+        firstName: "ahmad",
+        lastName: "fajri",
+      };
+
+      if ("firstName" in names) {
+        alert(`Hallo ${names.firstName}`);
+      } else {
+        alert("hallo");
+      }
+    </script>
+  </body>
+</html>
